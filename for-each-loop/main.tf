@@ -40,4 +40,4 @@ variable "fruits" {
     banana = 200
     orange = 300
   }
-}name = "apple"
+}
