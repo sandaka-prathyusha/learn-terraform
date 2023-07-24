@@ -9,14 +9,14 @@ resource "null_resource" "fruits" {
  for_each = var.fruits
 
   provisioner "local-exec" {
-    command = "echo fruit name - ${var.fruits[each.key]}"
+    command = "echo fruit name - ${var.fruits[]}"
 #    command = "echo ${length(var.fruits)}"
   }
 }
 
  variable "fruits" {
    default = {
-     apple =
+     apple = {
        name = "apple"
        count = 100
      }
