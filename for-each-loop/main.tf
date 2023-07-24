@@ -44,16 +44,16 @@ variable "fruits" {
 
 // for-each on a list
 
-variable "vegetables" {
-  default = [ "carrot","onion"]
-}
-
-resource "null_resource" "vegetables" {
-  for_each = toset(var.vegetables)
-
-
-  provisioner "vegetables" {
-    command = "echo VEGIES name -${each.key} "
-  }
-
-}
+#variable "vegetables" {
+#  default = [ "carrot","onion"]
+#}
+#
+#resource "null_resource" "vegetables" {
+#  for_each = toset(var.vegetables)
+#
+#
+#  provisioner "vegetables" {
+#    command = "echo VEGIES name -${each.key} "
+#  }
+#
+#}
