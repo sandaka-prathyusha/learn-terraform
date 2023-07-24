@@ -1,5 +1,5 @@
 resource "null_resource" "null" {
-  count =10
+  count = 10
 }
 
 # if i want to run the above resource 10 times the "count"will come into picture.
