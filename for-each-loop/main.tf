@@ -5,12 +5,18 @@ resource "null_resource" "null" {
 # if i want to run the above resource 10 times the "count"will come into picture.
 
 resource "null_resource" "fruits" {
-  count = length(var.fruits)
+  //count = length(var.fruits)
 
   provisioner "local-exec" {
-  command = "echo fruit name - ${var.fruits[count.index]}"
+    //command = "echo fruit name - ${var.fruits[count.index]}"
+    command = "echo ${length(var.fruits)}"
   }
+
 }
 variable "fruits" {
-   default = ["apple","banana","orange"]
+  default = {
+    apple = 10
+    orange = 200
+    banana = 100
+  }
 }
