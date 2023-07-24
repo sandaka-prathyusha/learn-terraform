@@ -9,7 +9,7 @@ resource "null_resource" "fruits" {
  for_each = var.fruits
 
   provisioner "local-exec" {
-    command = "echo fruit name - ${var.fruits[each.key]} - ${var.fruits[each.value]}"
+    command = "echo fruit name - ${var.fruits[each.key]}"
 #    command = "echo ${length(var.fruits)}"
   }
 }
