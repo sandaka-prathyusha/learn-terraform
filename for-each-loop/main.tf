@@ -14,20 +14,27 @@ resource "null_resource" "fruits" {
   }
 }
 
- variable "fruits" {
-   default = {
-     apple = {
-       name = "apple"
-       count = 100
-     }
-     orange = {
-       name = "orange"
-       count = 200
-     }
-     banana = {
-       name = "banana"
-       count = 300
-     }
+# variable "fruits" {
+#   default = {
+#     apple = {
+#       name = "apple"
+#       count = 100
+#     }
+#     orange = {
+#       name = "orange"
+#       count = 200
+#     }
+#     banana = {
+#       name = "banana"
+#       count = 300
+#     }
+#  }
+#}
+
+variable "fruits" {
+  default = {
+    apple = 100
+    banana = 200
+    orange = 300
   }
 }
-
