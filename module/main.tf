@@ -1,10 +1,10 @@
 module "sample1" {
     source = "./ec2"
-     name = "sample1"
+     name = "nandu"
 }
 
 module "sample2" {
    source = "./ec2"
-  name = "sample2"
+  name = "rannu"
 }
 
