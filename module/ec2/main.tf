@@ -6,6 +6,9 @@ resource "aws_instance" "web" {
   tags = {
     Name = var.name
   }
+
+
+
 }
 
 data "aws_ami" "example" {
@@ -15,7 +18,7 @@ data "aws_ami" "example" {
  owners      = ["973714476881"]
  }
 
-
+# security group
 resource "aws_security_group" "sg" {
   name        = var.name
   description = "Allow TLS inbound traffic"
